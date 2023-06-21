@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4babcf994a9edb519dd7",
-    "url": "/game-clicks/static/css/main.29331862.chunk.css"
+    "revision": "9bc6a96bc8fa38203993",
+    "url": "/game-clicks/static/css/main.8d4457f1.chunk.css"
   },
   {
-    "revision": "4babcf994a9edb519dd7",
-    "url": "/game-clicks/static/js/main.28eb73a0.chunk.js"
+    "revision": "9bc6a96bc8fa38203993",
+    "url": "/game-clicks/static/js/main.44dc7e23.chunk.js"
   },
   {
     "revision": "98ba03e59bc4fa87c028",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/game-clicks/static/media/img-tortugas.b8319152.jpg"
   },
   {
-    "revision": "efac5be46534bbd24b8d4bcc9be5512c",
+    "revision": "a21f053b578f1e91c4938e21d1437aa3",
     "url": "/game-clicks/index.html"
   }
 ];
