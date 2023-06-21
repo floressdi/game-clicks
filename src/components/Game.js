@@ -10,6 +10,7 @@ export default function Game() {
 
   function handleChange(e) {//aumentamos contador de clicks
     setCounter(counter + 1);
+    
   }
 
   function resetCounter(e) {

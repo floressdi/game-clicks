@@ -12,6 +12,7 @@
 .container__resultadosp{
     width: 70%;
     border: 1px solid var(--white);
+    padding: 1em;
     border-radius: 1em;
     margin-bottom: 1em;
 }
