@@ -13,7 +13,7 @@
   },
   "homepage": "https://floressdi.github.io/contador-clics",
   "scripts": {
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
