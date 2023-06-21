@@ -11,7 +11,7 @@
     "react-scripts": "^2.1.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://floressdi.github.io/contador-clics",
+  "homepage": "https://floressdi.github.io/game-clicks",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
