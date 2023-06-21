@@ -1,0 +1,22 @@
+
+.sect {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--black-transparent);
+    backdrop-filter: blur(10px);
+    position: absolute;
+
+}
+
+.container__resultadosp{
+    width: 70%;
+    border: 1px solid var(--white);
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+
+span, .leyenda{
+ font-weight: 700;
+}

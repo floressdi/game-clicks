@@ -1,0 +1,128 @@
+
+:root{
+  --black: rgb(20, 20, 20);
+  --black-transparent:rgb(20, 20, 20,  0.70);
+  --white: rgb(240,240,240);
+  --blue: rgb(28, 145, 207);
+  --red: rgb(221, 49, 49);
+}
+
+
+
+body{
+  background-color: var(--black);
+  color: var(--white) ;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select:none;
+  user-select: none;
+}
+
+.flexdirection{
+  flex-direction: column;
+}
+
+/* ================ Buttons =============== */
+.sectionbtn{
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.btn{
+  width: 150px;
+  height: 70px;
+  color: var(--black);
+  font-size: 1.2em;
+  font-weight: 700;
+  border: 0px ;
+  transition: all 0.7s ease-out;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.btn:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btnclic{
+    width: 100%;
+    border-radius:1em ;
+    background-color: var(--blue);
+}
+
+.btnDelete{
+  width: 100%;
+  border-radius:1em ;
+  background-color: var(--red);  
+}
+
+.containerBtns{
+  width: 300px;
+  height: auto;
+}
+
+/* =================== DISPLAY GAME ============ */
+.displayCounter{
+  width: 300px;
+  height: 300px;
+  border: 5px solid var(--white);
+  border-radius: 1em;
+}
+
+.times{
+  text-align: center;
+  font-size: 3em;
+}
+
+.number{
+  font-size: 5em;
+}
+
+
+/* =============== Display Inicio ============= */
+
+.inicio{
+  width: 100%;
+  background-color: var(--black);
+}
+
+.menuinicio{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menuinicio.activate{
+  position: absolute;
+  top: -5000%;
+}
+
+.btn_start{
+  width: 150px;
+  height: 35px;
+  background-color: var(--white);
+  border-radius: 1em;
+  border: 0px;
+  font-size: medium;  
+  transition: all ease-in-out .2s;
+}
+
+.btn_start:hover{
+  border: 1px solid var(--blue);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+
