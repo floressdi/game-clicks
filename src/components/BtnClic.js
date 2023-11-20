@@ -1,19 +1,24 @@
 // import React, { useState } from 'react';
 import React from 'react';
+import logoclic from "../img/ClickCounterLogo.png"
 import '../App.css';
 
 function BtnClic(prop) {
 
-  const {counter, handleChange, text} = prop
+  const {counter, handleChange} = prop
 
   return (
-    <div>
-        <button className='btnclic btn'
-          onClick={handleChange}
-          value ={counter}
-         >
-          <p>{text}</p>
+    <>
+          <button className=' btnclic logorounded'
+            onClick={handleChange}
+            value ={counter}
+          >
+            <img 
+                className='logorounded'
+                width={200}
+                src={logoclic}
+            />
         </button>
-    </div>
+    </>
   )
 }export default BtnClic;

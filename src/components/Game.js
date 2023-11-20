@@ -1,16 +1,22 @@
 import React, { useRef, useEffect, useState } from "react";
 import BtnClic from "./BtnClic";
-import BtnDelete from "./BtnDelete";
 import DisplayCounter from "./DisplayCounter";
 import Results from "./Results";
+import soundclic from '../sounds/pew_pew-dknight556-1379997159.mp3'
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import "../App.css";
 
 export default function Game() {
   const [counter, setCounter] = useState(0);
 
+  // function sound(){ //function of sound al dar click
+  //   new Audio(soundclic).play();
+  // }
+
   function handleChange(e) {//aumentamos contador de clicks
+    // sound()// call function sound
     setCounter(counter + 1);
-    
   }
 
   function resetCounter(e) {
@@ -18,7 +24,7 @@ export default function Game() {
   }
 
   const [timeMinutes, setTimeMinutes] = useState(0); //Iniciamos en un minuto
-  const [timeSeconds, setTimeSeconds] = useState(30);
+  const [timeSeconds, setTimeSeconds] = useState(10);
 
   let intervalRef = useRef();
 
@@ -45,24 +51,43 @@ export default function Game() {
   return (
     <section className="sectionbtn flexbox">
 
-
       {showResults && <Results
       
           clicks ={counter}
       />}
 
+      {/* <Results/> */}
 
-      <div className="">
-        <h2> Revienta ese boton! </h2> 
-        <p className="times">
-          {timeMinutes < 10 ? "0" + timeMinutes : timeMinutes}:
-          {timeSeconds < 10 ? "0" + timeSeconds : timeSeconds}
-        </p>
+      <div className="circularbarprogress">
+        {/* <h2> Revienta ese boton! </h2>  */}
+
+        <CircularProgressbar 
+          value={timeSeconds}
+          maxValue={10} 
+          text={timeSeconds}
+          styles={buildStyles({
+            
+            // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+            strokeLinecap: 'butt',
+        
+            // Text size
+            textSize: '30px',
+        
+            // How long animation takes to go from one percentage to another, in seconds
+            pathTransitionDuration: timeSeconds,
+        
+            // Colors
+            pathColor: `rgba(234, 198, 8)`,
+            textColor: '#EAC608',
+            trailColor: '#1C1C1C',
+            backgroundColor: '#3e98c7',
+          })}
+        />
       </div>
       <div>
         <DisplayCounter counter={counter} />
       </div>
-      <div className="containerBtns">
+      <div className=" displaybtn flexbox">
         <BtnClic counter={counter} handleChange={handleChange} text="CLICK" />
       </div>   
     </section>
